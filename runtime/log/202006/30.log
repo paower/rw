@@ -1,0 +1,5025 @@
+---------------------------------------------------------------
+[ 2020-06-30T10:39:39+08:00 ] 113.68.36.65 GET ct.demo88.top/admin
+[运行时间：0.170000s] [吞吐率：5.88req/s] [内存消耗：1,436.09kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:39:39+08:00 ] 113.68.36.65 GET ct.demo88.top/admin/Login/login
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：1,407.47kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\web\mshop\shop\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./shop/admin\view\public\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:39:42+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,114.63kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/admin/Login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:39:52+08:00 ] 113.68.36.65 POST ct.demo88.top/admin/Login/login
+[运行时间：0.210000s] [吞吐率：4.76req/s] [内存消耗：2,035.23kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/admin/Login/login',
+  'origin' => 'http://ct.demo88.top',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Login/login' => '',
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\web\mshop\shop\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:39:53+08:00 ] 113.68.36.65 GET ct.demo88.top/admin/Index/index
+[运行时间：0.210000s] [吞吐率：4.76req/s] [内存消耗：2,340.11kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/admin/Login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\web\mshop\shop\admin\controller\Index.php ]
+[ info ] [ VIEW ] ./shop/admin\view\index\index.html [ array (
+  0 => 'admin_menu',
+  1 => 'total_order',
+  2 => 'today_order',
+  3 => 'total_money',
+  4 => 'today_money',
+  5 => 'user_action_total',
+  6 => 'today_user_action',
+  7 => 'today_member',
+  8 => 'member_count',
+  9 => 'user_action',
+  10 => 'uc_empty',
+  11 => 'order_list',
+  12 => 'empty',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:39:58+08:00 ] 113.68.36.65 GET ct.demo88.top/member/member_backend/index
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,234.21kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'member',
+    1 => 'member_backend',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/admin/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/member/member_backend/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\member\controller\MemberBackend->index[ D:\web\mshop\shop\member\controller\MemberBackend.php ]
+[ info ] [ VIEW ] ./themes/default/member/member_backend\index.html [ array (
+  0 => 'admin_menu',
+  1 => 'breadcrumb1',
+  2 => 'breadcrumb2',
+  3 => 'list',
+  4 => 'empty',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:40:04+08:00 ] 113.68.36.65 GET ct.demo88.top/admin/goods/index
+[运行时间：0.140000s] [吞吐率：7.14req/s] [内存消耗：2,302.81kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goods',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/member/member_backend/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/admin/goods/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Goods->index[ D:\web\mshop\shop\admin\controller\Goods.php ]
+[ info ] [ VIEW ] ./shop/admin\view\goods\index.html [ array (
+  0 => 'admin_menu',
+  1 => 'breadcrumb1',
+  2 => 'breadcrumb2',
+  3 => 'empty',
+  4 => 'category',
+  5 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:40:09+08:00 ] 113.68.36.65 GET ct.demo88.top/
+[运行时间：0.180000s] [吞吐率：5.56req/s] [内存消耗：2,166.16kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/admin/goods/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:40:15+08:00 ] 113.68.36.65 GET ct.demo88.top/
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,166.48kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/admin/goods/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:40:24+08:00 ] 113.68.36.65 GET ct.demo88.top/
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,166.52kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/admin/goods/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:40:29+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/classify
+[运行时间：0.100000s] [吞吐率：10.00req/s] [内存消耗：2,204.02kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'classify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/classify' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->classify[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\classify.html [ array (
+  0 => 'top_nav',
+  1 => 'categoryParent',
+  2 => 'categorySub',
+  3 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:40:30+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/shpcart
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,485.26kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'shpcart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/classify',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/shpcart' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->shpcart[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:40:30+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Login/login
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：1,424.37kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/classify',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:40:30+08:00 ] 113.68.36.65 GET ct.demo88.top/captcha
+[运行时间：0.090000s] [吞吐率：11.11req/s] [内存消耗：1,133.98kb] [文件加载：29]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/captcha' => '',
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\web\mshop\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:40:42+08:00 ] 113.68.36.65 GET ct.demo88.top/captcha?rand=0.909678339802015
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：1,134.20kb] [文件加载：29]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/captcha' => '',
+  'rand' => '0.909678339802015',
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\web\mshop\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:40:50+08:00 ] 113.68.36.65 POST ct.demo88.top/index/Login/login
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,295.06kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'origin' => 'http://ct.demo88.top',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'content-length' => '52',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+  'user_phone' => '13211111111',
+  'user_pass' => '11111',
+  'captcha' => 'wjk72',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:40:56+08:00 ] 113.68.36.65 GET ct.demo88.top/captcha?rand=0.0862443609938679
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,134.06kb] [文件加载：29]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/captcha' => '',
+  'rand' => '0.0862443609938679',
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\web\mshop\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:03+08:00 ] 113.68.36.65 POST ct.demo88.top/index/Login/login
+[运行时间：0.120000s] [吞吐率：8.33req/s] [内存消耗：2,294.52kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'origin' => 'http://ct.demo88.top',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'content-length' => '53',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+  'user_phone' => '13211111111',
+  'user_pass' => '111111',
+  'captcha' => 'kjkm4',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:03+08:00 ] 113.68.36.65 GET ct.demo88.top/index/index/pcenter
+[运行时间：0.110000s] [吞吐率：9.09req/s] [内存消耗：2,473.43kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:07+08:00 ] 113.68.36.65 GET ct.demo88.top/index/user/coupon
+[运行时间：0.130000s] [吞吐率：7.69req/s] [内存消耗：2,124.33kb] [文件加载：48]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'coupon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/coupon' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->coupon[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/user\coupon.html [ array (
+  0 => 'top_nav',
+  1 => 'user_coupon1',
+  2 => 'user_coupon2',
+  3 => 'user_coupon3',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:08+08:00 ] 113.68.36.65 GET ct.demo88.top/index/index/pcenter
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：2,348.68kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:09+08:00 ] 113.68.36.65 GET ct.demo88.top/index/user/address
+[运行时间：0.120000s] [吞吐率：8.33req/s] [内存消耗：2,165.63kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'address',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/address' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->address[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/user\address.html [ array (
+  0 => 'top_nav',
+  1 => 'address',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:11+08:00 ] 113.68.36.65 GET ct.demo88.top/index/index/pcenter
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：2,348.68kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/user/coupon',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:11+08:00 ] 113.68.36.65 GET ct.demo88.top/index/user/coupon
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：2,124.33kb] [文件加载：48]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'coupon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/coupon' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->coupon[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/user\coupon.html [ array (
+  0 => 'top_nav',
+  1 => 'user_coupon1',
+  2 => 'user_coupon2',
+  3 => 'user_coupon3',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:14+08:00 ] 113.68.36.65 GET ct.demo88.top/index/index/pcenter
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：2,348.68kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/user/address',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:16+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/shpcart
+[运行时间：0.180000s] [吞吐率：5.56req/s] [内存消耗：2,148.06kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'shpcart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/shpcart' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->shpcart[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\shpcart.html [ array (
+  0 => 'top_nav',
+  1 => 'cart',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:17+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：2,348.69kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/shpcart',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:18+08:00 ] 113.68.36.65 GET ct.demo88.top/index/user/wallet
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,161.06kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'wallet',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/wallet' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->wallet[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/user\wallet.html [ array (
+  0 => 'top_nav',
+  1 => 'wallet',
+  2 => 'total',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:21+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：2,348.69kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/shpcart',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:41:24+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/index
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,168.57kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uoagi66b10f8pf4bql00snj1c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:51:54+08:00 ] 101.89.19.197 GET ct.demo88.top/admin/Login/login
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,406.24kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\web\mshop\shop\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./shop/admin\view\public\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:52:43+08:00 ] 61.129.6.227 GET ct.demo88.top/
+[运行时间：0.100000s] [吞吐率：10.00req/s] [内存消耗：2,164.85kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://ct.demo88.top/admin/goods/index',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:53:34+08:00 ] 101.89.19.197 GET ct.demo88.top/index/index/pcenter
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：2,280.60kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2141.400 QQBrowser/9.5.10219.400',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T10:53:48+08:00 ] 101.89.239.245 GET ct.demo88.top/index/user/address
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,509.20kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'address',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'referer' => 'http://ct.demo88.top/index/index/pcenter',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2141.400 QQBrowser/9.5.10219.400',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/address' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->address[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:02:47+08:00 ] 113.68.36.65 GET ct.demo88.top/
+[运行时间：0.090000s] [吞吐率：11.11req/s] [内存消耗：2,165.88kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507845347',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:02:49+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.010000s] [吞吐率：100.00req/s] [内存消耗：1,114.61kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:02:53+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：2,281.45kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507851676',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:02:54+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:02:56+08:00 ] 113.68.36.65 GET ct.demo88.top/index/user/setting
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,510.54kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'setting',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507854489',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/setting' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->setting[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:02:56+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Login/login
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,424.67kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507854489',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:02:56+08:00 ] 113.68.36.65 GET ct.demo88.top/captcha
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,133.62kb] [文件加载：29]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/captcha' => '',
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\web\mshop\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:02:56+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:03:14+08:00 ] 113.68.36.65 POST ct.demo88.top/index/Login/login
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：2,228.13kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ct.demo88.top',
+  'accept' => '*/*',
+  'content-length' => '53',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+  'user_phone' => '13211111111',
+  'user_pass' => '111111',
+  'captcha' => 'rp60p',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:03:15+08:00 ] 113.68.36.65 GET ct.demo88.top/captcha?rand=0.8038063774890798
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,133.85kb] [文件加载：29]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/captcha' => '',
+  'rand' => '0.8038063774890798',
+  'id' => '',
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\web\mshop\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:03:25+08:00 ] 113.68.36.65 POST ct.demo88.top/index/Login/login
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,294.15kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ct.demo88.top',
+  'accept' => '*/*',
+  'content-length' => '53',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+  'user_phone' => '13211111111',
+  'user_pass' => '111111',
+  'captcha' => '3ybay',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:03:25+08:00 ] 113.68.36.65 GET ct.demo88.top/index/index/pcenter
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：2,348.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:03:28+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/index
+[运行时间：0.070000s] [吞吐率：14.29req/s] [内存消耗：2,169.14kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507886649',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:03:28+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:03:45+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Goods/details/id/16
+[运行时间：0.220000s] [吞吐率：4.55req/s] [内存消耗：2,145.13kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507902883',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/16' => '',
+  'id' => '16',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\mshop\shop\index\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/goods\details.html [ array (
+  0 => 'top_nav',
+  1 => 'goods',
+  2 => 'goods_image',
+  3 => 'goods_discount',
+  4 => 'attribute',
+  5 => 'goods_description',
+  6 => 'goods_brand',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:03:46+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Goods/details/id/16',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:03:54+08:00 ] 113.68.36.65 GET ct.demo88.top/index/index/coupon
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,140.65kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'coupon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507912723',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/coupon' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->coupon[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\coupon.html [ array (
+  0 => 'top_nav',
+  1 => 'coupon',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:03:54+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.010000s] [吞吐率：100.00req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/index/coupon',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:02+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Goods/details/id/14
+[运行时间：0.100000s] [吞吐率：10.00req/s] [内存消耗：2,146.69kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507920712',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/14' => '',
+  'id' => '14',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\mshop\shop\index\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/goods\details.html [ array (
+  0 => 'top_nav',
+  1 => 'goods',
+  2 => 'goods_image',
+  3 => 'goods_discount',
+  4 => 'attribute',
+  5 => 'goods_description',
+  6 => 'goods_brand',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:03+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.010000s] [吞吐率：100.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Goods/details/id/14',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:07+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/classify
+[运行时间：0.070000s] [吞吐率：14.29req/s] [内存消耗：2,204.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'classify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507925764',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/classify' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->classify[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\classify.html [ array (
+  0 => 'top_nav',
+  1 => 'categoryParent',
+  2 => 'categorySub',
+  3 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:08+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/classify',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:13+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/shpcart
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,147.96kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'shpcart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/classify',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507931335',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/shpcart' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->shpcart[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\shpcart.html [ array (
+  0 => 'top_nav',
+  1 => 'cart',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:13+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/shpcart',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:14+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：2,348.34kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/shpcart',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507932663',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:14+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:17+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/index
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,169.15kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507935291',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:17+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:55+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：2,348.33kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593507973973',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:04:56+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:13:23+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/index
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,169.13kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508481166',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:13:24+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:13:50+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：2,348.33kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508508896',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:13:51+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.010000s] [吞吐率：100.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:13:53+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/classify
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,204.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'classify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508511453',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/classify' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->classify[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\classify.html [ array (
+  0 => 'top_nav',
+  1 => 'categoryParent',
+  2 => 'categorySub',
+  3 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:13:53+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/index
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,169.15kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508511856',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:13:54+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:03+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/classify
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,204.34kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'classify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508521407',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/classify' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->classify[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\classify.html [ array (
+  0 => 'top_nav',
+  1 => 'categoryParent',
+  2 => 'categorySub',
+  3 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:03+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/classify',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:04+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/classify
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,204.03kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'classify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/classify',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/classify' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->classify[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\classify.html [ array (
+  0 => 'top_nav',
+  1 => 'categoryParent',
+  2 => 'categorySub',
+  3 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:47+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/index
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,169.14kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/classify',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508565143',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:47+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:50+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/shpcart
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,147.95kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'shpcart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508568725',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/shpcart' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->shpcart[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\shpcart.html [ array (
+  0 => 'top_nav',
+  1 => 'cart',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:51+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/shpcart',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:52+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/index
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,169.13kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/shpcart',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508570337',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:52+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:53+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：2,348.33kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508571790',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:53+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:55+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/index
+[运行时间：0.090000s] [吞吐率：11.11req/s] [内存消耗：2,169.16kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508573999',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:14:56+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:06+08:00 ] 113.68.36.65 GET ct.demo88.top/index/index/popular
+[运行时间：0.090000s] [吞吐率：11.11req/s] [内存消耗：2,141.50kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'popular',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508584330',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/popular' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->popular[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\popular.html [ array (
+  0 => 'top_nav',
+  1 => 'popular',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:06+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/index/popular',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:14+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.050000s] [吞吐率：20.00req/s] [内存消耗：2,348.33kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508592693',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:14+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:17+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/index
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,169.15kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508595592',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:17+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:19+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：2,348.33kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508597201',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:19+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:23+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/index
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,169.14kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508601319',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:23+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:23+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,348.02kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:24+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,348.33kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593508602944',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:15:25+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:30:59+08:00 ] 116.198.10.10 GET ct.demo88.top/index/Index/shpcart
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：1,483.52kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'shpcart',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; vivo Y71A Build/OPM1.171019.011; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/71.0.3578.98 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/shpcart' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->shpcart[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:30:59+08:00 ] 116.198.10.10 GET ct.demo88.top/index/Login/login
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,423.73kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=3jnnvv8phnuem8iu1dpmopp090',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; vivo Y71A Build/OPM1.171019.011; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/71.0.3578.98 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:31:43+08:00 ] 116.198.10.1 GET ct.demo88.top/index/Index/pcenter
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：2,280.58kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X; rv:66.0.1) Gecko/68.0 Firefox/66.0.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:33:15+08:00 ] 39.105.128.72 GET ct.demo88.top/index/Goods/details/id/14
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,468.42kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/68.0.3440.70 Mobile/15E148 Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/14' => '',
+  'id' => '14',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\mshop\shop\index\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:33:15+08:00 ] 39.105.128.72 GET ct.demo88.top/index/Login/login
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,423.58kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=u8ed6a2jfilf3ftv10pe8e1mg5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/68.0.3440.70 Mobile/15E148 Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:33:23+08:00 ] 116.198.15.9 GET ct.demo88.top/index/Login/login
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,423.38kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/77.0.3865.69 Mobile/15E148 Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:33:28+08:00 ] 61.151.178.175 GET ct.demo88.top/
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,165.02kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.27.400 QQBrowser/9.0.2524.400',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:34:42+08:00 ] 112.96.134.158 GET ct.demo88.top/?nsukey=3VVvRo%2Fp3ny1j5gRsjuWoiyC2Eicvs4MtH1Adp%2Fj0Rl1nRCImfDDkGOVD2aFVR966gC11ovqM%2FdLwL3jyeeeFHHAjTnSE%2F7c5Kb13TunyKwh2f36Kfpi7XynceBqXuEzOBp7rK12FZNb03WqbJwGeP4LdOpdpP8n329mPuPONUn6ou26V9SpsXsAEZfXviciovzgbv1mO2uxuA0CMFTsYg%3D%3D
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,168.53kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-requested-with' => 'com.tencent.mm',
+  'x-forwarded-for-pound' => '112.96.134.158',
+  'x-forwarded-for' => '112.96.134.158',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K30 Pro Build/QKQ1.191117.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045227 Mobile Safari/537.36 MMWEBID/7196 MicroMessenger/7.0.14.1660(0x27000E39) Process/tools NetType/4G Language/zh_CN ABI/arm64 WeChat/arm64',
+  'upgrade-insecure-requests' => '1',
+  'q-qimei' => 'a42eef9d888fb116',
+  'host' => 'ct.demo88.top',
+  'connection' => 'close',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => '3VVvRo/p3ny1j5gRsjuWoiyC2Eicvs4MtH1Adp/j0Rl1nRCImfDDkGOVD2aFVR966gC11ovqM/dLwL3jyeeeFHHAjTnSE/7c5Kb13TunyKwh2f36Kfpi7XynceBqXuEzOBp7rK12FZNb03WqbJwGeP4LdOpdpP8n329mPuPONUn6ou26V9SpsXsAEZfXviciovzgbv1mO2uxuA0CMFTsYg==',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:34:43+08:00 ] 39.105.128.72 GET ct.demo88.top/index/order/orderlist?type=4
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：1,527.01kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; vivo Y71A Build/OPM1.171019.011; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/78.0.3904.62 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/orderlist' => '',
+  'type' => '4',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Order->orderlist[ D:\web\mshop\shop\index\controller\Order.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:34:44+08:00 ] 39.105.128.72 GET ct.demo88.top/index/Login/login
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,423.73kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=06npv24gvd7pk4isa1mg3bhpp5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; vivo Y71A Build/OPM1.171019.011; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/78.0.3904.62 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:34:44+08:00 ] 112.96.134.158 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,116.70kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/?nsukey=3VVvRo%2Fp3ny1j5gRsjuWoiyC2Eicvs4MtH1Adp%2Fj0Rl1nRCImfDDkGOVD2aFVR966gC11ovqM%2FdLwL3jyeeeFHHAjTnSE%2F7c5Kb13TunyKwh2f36Kfpi7XynceBqXuEzOBp7rK12FZNb03WqbJwGeP4LdOpdpP8n329mPuPONUn6ou26V9SpsXsAEZfXviciovzgbv1mO2uxuA0CMFTsYg%3D%3D',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/tpg,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K30 Pro Build/QKQ1.191117.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045227 Mobile Safari/537.36 MMWEBID/7196 MicroMessenger/7.0.14.1660(0x27000E39) Process/tools NetType/4G Language/zh_CN ABI/arm64 WeChat/arm64',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:35:04+08:00 ] 112.96.134.158 GET ct.demo88.top/?nsukey=ODLYPrdin6vfNOwSkV%2Fi8OqwAGj8Yj%2BnJdYh9Wl3Ju%2BInurzk80Ki2zXabi3Ys%2B9RGkg1Xep0nbs46Wri%2FuflvAEYsY9T%2BsxXSZNnhVuBmfcn8tfxIoeSWAoHgOtKFPXTRqBJMWOaqxYrp5CslmTZ0aU1uATqabMSu7Amfs9ww5vpExrEXjpdmzcDgnzW7XB6TLxkzHf233OGLzkvjcsWg%3D%3D
+[运行时间：0.070000s] [吞吐率：14.29req/s] [内存消耗：2,167.86kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K30 Pro Build/QKQ1.191117.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045227 Mobile Safari/537.36 MMWEBID/7196 MicroMessenger/7.0.14.1660(0x27000E39) Process/tools NetType/4G Language/zh_CN ABI/arm64 WeChat/arm64',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'ODLYPrdin6vfNOwSkV/i8OqwAGj8Yj+nJdYh9Wl3Ju+Inurzk80Ki2zXabi3Ys+9RGkg1Xep0nbs46Wri/uflvAEYsY9T+sxXSZNnhVuBmfcn8tfxIoeSWAoHgOtKFPXTRqBJMWOaqxYrp5CslmTZ0aU1uATqabMSu7Amfs9ww5vpExrEXjpdmzcDgnzW7XB6TLxkzHf233OGLzkvjcsWg==',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:35:05+08:00 ] 112.96.134.158 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,116.70kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/?nsukey=ODLYPrdin6vfNOwSkV%2Fi8OqwAGj8Yj%2BnJdYh9Wl3Ju%2BInurzk80Ki2zXabi3Ys%2B9RGkg1Xep0nbs46Wri%2FuflvAEYsY9T%2BsxXSZNnhVuBmfcn8tfxIoeSWAoHgOtKFPXTRqBJMWOaqxYrp5CslmTZ0aU1uATqabMSu7Amfs9ww5vpExrEXjpdmzcDgnzW7XB6TLxkzHf233OGLzkvjcsWg%3D%3D',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'image/webp,image/wxpic,image/sharpp,image/apng,image/tpg,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K30 Pro Build/QKQ1.191117.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045227 Mobile Safari/537.36 MMWEBID/7196 MicroMessenger/7.0.14.1660(0x27000E39) Process/tools NetType/4G Language/zh_CN ABI/arm64 WeChat/arm64',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:35:09+08:00 ] 112.96.134.158 GET ct.demo88.top/index/Index/classify
+[运行时间：0.070000s] [吞吐率：14.29req/s] [内存消耗：2,206.02kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'classify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/?nsukey=ODLYPrdin6vfNOwSkV%2Fi8OqwAGj8Yj%2BnJdYh9Wl3Ju%2BInurzk80Ki2zXabi3Ys%2B9RGkg1Xep0nbs46Wri%2FuflvAEYsY9T%2BsxXSZNnhVuBmfcn8tfxIoeSWAoHgOtKFPXTRqBJMWOaqxYrp5CslmTZ0aU1uATqabMSu7Amfs9ww5vpExrEXjpdmzcDgnzW7XB6TLxkzHf233OGLzkvjcsWg%3D%3D',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K30 Pro Build/QKQ1.191117.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045227 Mobile Safari/537.36 MMWEBID/7196 MicroMessenger/7.0.14.1660(0x27000E39) Process/tools NetType/4G Language/zh_CN ABI/arm64 WeChat/arm64',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/classify' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->classify[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\classify.html [ array (
+  0 => 'top_nav',
+  1 => 'categoryParent',
+  2 => 'categorySub',
+  3 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:35:10+08:00 ] 112.96.134.158 GET ct.demo88.top/index/Index/classify
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,206.02kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'classify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/?nsukey=ODLYPrdin6vfNOwSkV%2Fi8OqwAGj8Yj%2BnJdYh9Wl3Ju%2BInurzk80Ki2zXabi3Ys%2B9RGkg1Xep0nbs46Wri%2FuflvAEYsY9T%2BsxXSZNnhVuBmfcn8tfxIoeSWAoHgOtKFPXTRqBJMWOaqxYrp5CslmTZ0aU1uATqabMSu7Amfs9ww5vpExrEXjpdmzcDgnzW7XB6TLxkzHf233OGLzkvjcsWg%3D%3D',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10; Redmi K30 Pro Build/QKQ1.191117.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.3865.120 MQQBrowser/6.2 TBS/045227 Mobile Safari/537.36 MMWEBID/7196 MicroMessenger/7.0.14.1660(0x27000E39) Process/tools NetType/4G Language/zh_CN ABI/arm64 WeChat/arm64',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/classify' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->classify[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\classify.html [ array (
+  0 => 'top_nav',
+  1 => 'categoryParent',
+  2 => 'categorySub',
+  3 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:35:42+08:00 ] 61.151.178.225 GET ct.demo88.top/?nsukey=3VVvRo%2Fp3ny1j5gRsjuWoiyC2Eicvs4MtH1Adp%2Fj0Rl1nRCImfDDkGOVD2aFVR966gC11ovqM%2FdLwL3jyeeeFHHAjTnSE%2F7c5Kb13TunyKwh2f36Kfpi7XynceBqXuEzOBp7rK12FZNb03WqbJwGeP4LdOpdpP8n329mPuPONUn6ou26V9SpsXsAEZfXviciovzgbv1mO2uxuA0CMFTsYg%3D%3D
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,166.06kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 MicroMessenger/6.5.5 NetType/WIFI Language/en',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => '3VVvRo/p3ny1j5gRsjuWoiyC2Eicvs4MtH1Adp/j0Rl1nRCImfDDkGOVD2aFVR966gC11ovqM/dLwL3jyeeeFHHAjTnSE/7c5Kb13TunyKwh2f36Kfpi7XynceBqXuEzOBp7rK12FZNb03WqbJwGeP4LdOpdpP8n329mPuPONUn6ou26V9SpsXsAEZfXviciovzgbv1mO2uxuA0CMFTsYg==',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:36:09+08:00 ] 61.151.178.174 GET ct.demo88.top/index/Index/classify
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,202.70kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'classify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 MicroMessenger/6.5.5 NetType/WIFI Language/en',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/classify' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->classify[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\classify.html [ array (
+  0 => 'top_nav',
+  1 => 'categoryParent',
+  2 => 'categorySub',
+  3 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:36:10+08:00 ] 39.105.128.72 GET ct.demo88.top/index/index/coupon
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：2,139.36kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'coupon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/63.0.3223.0 Mobile/15E148 Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/coupon' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->coupon[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\coupon.html [ array (
+  0 => 'top_nav',
+  1 => 'coupon',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:36:14+08:00 ] 116.198.15.10 GET ct.demo88.top/index/order/orderlist?type=1
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,526.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/70.0.3538.77 Mobile/15E148 Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/orderlist' => '',
+  'type' => '1',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Order->orderlist[ D:\web\mshop\shop\index\controller\Order.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:36:14+08:00 ] 116.198.15.10 GET ct.demo88.top/index/Login/login
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,423.58kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=0rhkf1krlbpuk965nhplc37tc7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/70.0.3538.77 Mobile/15E148 Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:37:05+08:00 ] 39.105.128.71 GET ct.demo88.top/index/user/coupon
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,509.37kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'coupon',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; vivo X20A Build/NMF26X; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/coupon' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->coupon[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:37:05+08:00 ] 39.105.128.71 GET ct.demo88.top/index/Login/login
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,423.61kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=41radehbm0ig8rd2mb2a8lbtg6',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; vivo X20A Build/NMF26X; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:37:18+08:00 ] 39.105.128.72 GET ct.demo88.top/index/user/setting
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,509.37kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'setting',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; MI 6 Build/OPR1.170623.027; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/setting' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->setting[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:37:18+08:00 ] 39.105.128.72 GET ct.demo88.top/index/Login/login
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,423.73kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=2ebsrr3euv4sv7t16v4qbsqqq3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; MI 6 Build/OPR1.170623.027; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/60.0.3112.116 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:37:45+08:00 ] 116.198.10.11 GET ct.demo88.top/index/Index/index
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,167.88kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; BKK-AL10 Build/HONORBKK-AL10; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:38:06+08:00 ] 39.105.128.250 GET ct.demo88.top/index/Index/classify
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：2,203.30kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'classify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; SM-J3109 Build/LMY47X) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/62.0.3202.62 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/classify' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->classify[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\classify.html [ array (
+  0 => 'top_nav',
+  1 => 'categoryParent',
+  2 => 'categorySub',
+  3 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:38:48+08:00 ] 39.105.128.250 GET ct.demo88.top/index/order/orderlist?type=0
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,526.98kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; SM-G900P Build/LRX21T) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/orderlist' => '',
+  'type' => '0',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Order->orderlist[ D:\web\mshop\shop\index\controller\Order.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:38:48+08:00 ] 39.105.128.250 GET ct.demo88.top/index/Login/login
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,423.58kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=dhrqgpdd12tj32knvhtdlnq4m0',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; SM-G900P Build/LRX21T) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:38:49+08:00 ] 39.105.128.71 GET ct.demo88.top/index/order/orderlist?type=2
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,527.01kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; vivo Y85 Build/OPM1.171019.011) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/70.0.3538.67 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/orderlist' => '',
+  'type' => '2',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Order->orderlist[ D:\web\mshop\shop\index\controller\Order.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:38:49+08:00 ] 39.105.128.71 GET ct.demo88.top/index/Login/login
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,423.73kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=7njhjv647f6a2ignh2gqheks57',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; vivo Y85 Build/OPM1.171019.011) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/70.0.3538.67 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:38:58+08:00 ] 113.68.36.65 GET ct.demo88.top/index/user/invitation
+[运行时间：0.190000s] [吞吐率：5.26req/s] [内存消耗：2,519.30kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'invitation',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593510015930',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/invitation' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->invitation[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/user\invitation.html [ array (
+  0 => 'top_nav',
+  1 => 'user',
+  2 => 'pic',
+  3 => 'qrData',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:38:59+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.09kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/user/invitation',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:39:06+08:00 ] 39.105.128.250 GET ct.demo88.top/index/user/wallet
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,509.16kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'wallet',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_1 like Mac OS X; rv:68.3.0) Gecko/68.0 Firefox/68.3.0',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/wallet' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->wallet[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:39:06+08:00 ] 39.105.128.250 GET ct.demo88.top/index/Login/login
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,423.41kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=d5o9b4ut5q8h2vn23pjo2c8g62',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_1 like Mac OS X; rv:68.3.0) Gecko/68.0 Firefox/68.3.0',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:39:10+08:00 ] 113.68.36.65 GET ct.demo88.top/index/Index/index
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,169.13kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/pcenter',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'starttime' => '1593510028657',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:39:11+08:00 ] 113.68.36.65 GET ct.demo88.top/favicon.ico
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,115.08kb] [文件加载：30]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=uj59ggbr5lev0b1lotaga8bph4',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ct.demo88.top/index/Index/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; V1801A0 Build/PKQ1.180819.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/8.0.10.1',
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:39:37+08:00 ] 39.105.128.71 GET ct.demo88.top/index/user/invitation
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,509.17kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'invitation',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_3_1 like Mac OS X; rv:68.0.2) Gecko/68.0 Firefox/68.0.2',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/invitation' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->invitation[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:39:38+08:00 ] 39.105.128.71 GET ct.demo88.top/index/Login/login
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,423.41kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=i6f7rel129jlih00r1brpnecu6',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_3_1 like Mac OS X; rv:68.0.2) Gecko/68.0 Firefox/68.0.2',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:40:09+08:00 ] 39.105.128.71 GET ct.demo88.top/index/order/orderlist?type=3
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,527.01kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'order',
+    2 => 'orderlist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; vivo Y71A Build/OPM1.171019.011; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/order/orderlist' => '',
+  'type' => '3',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Order->orderlist[ D:\web\mshop\shop\index\controller\Order.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:40:10+08:00 ] 39.105.128.71 GET ct.demo88.top/index/Login/login
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,423.73kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=rlsn5m965p0i5oc4d7p3dpf8j2',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; vivo Y71A Build/OPM1.171019.011; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/66.0.3359.117 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:40:44+08:00 ] 39.105.128.71 GET ct.demo88.top/index/user/address
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,509.34kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'address',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/73.0.3683.90 Mobile/15E148 Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/address' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->address[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:40:44+08:00 ] 39.105.128.71 GET ct.demo88.top/index/Login/login
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,423.58kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=inq6v2gnbepbpmkof31pccg140',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/73.0.3683.90 Mobile/15E148 Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:41:15+08:00 ] 116.198.10.12 GET ct.demo88.top/index/user/service
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,509.37kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'service',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; HMA-AL00 Build/HUAWEIHMA-AL00) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/62.0.3202.89 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/user/service' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\User->service[ D:\web\mshop\shop\index\controller\User.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:41:15+08:00 ] 116.198.10.12 GET ct.demo88.top/index/Login/login
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,423.73kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=j7lij6npu3o1p2in5529ndb3k3',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; HMA-AL00 Build/HUAWEIHMA-AL00) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/62.0.3202.89 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:41:55+08:00 ] 116.198.10.5 GET ct.demo88.top/index/login/register
+[运行时间：0.060000s] [吞吐率：16.67req/s] [内存消耗：1,424.77kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; vivo X20A Build/NMF26X; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/77.0.3865.116 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/login/register' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->register[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\register.html [ array (
+  0 => 'invitation_phone',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:44:14+08:00 ] 116.198.15.7 GET ct.demo88.top/index/login/retrieve
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：1,423.76kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'login',
+    2 => 'retrieve',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; SM-G9500 Build/PPR1.180610.011; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/71.0.3578.80 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/login/retrieve' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->retrieve[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\retrieve.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:44:36+08:00 ] 39.105.128.71 GET ct.demo88.top/index/Goods/details/id/16
+[运行时间：0.020000s] [吞吐率：50.00req/s] [内存消耗：1,468.42kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Goods',
+    2 => 'details',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; SM-J3109 Build/LMY47X) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/66.0.3359.181 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Goods/details/id/16' => '',
+  'id' => '16',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Goods->details[ D:\web\mshop\shop\index\controller\Goods.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:44:36+08:00 ] 39.105.128.71 GET ct.demo88.top/index/Login/login
+[运行时间：0.030000s] [吞吐率：33.33req/s] [内存消耗：1,423.58kb] [文件加载：41]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'cookie' => 'PHPSESSID=ecobflcuu1p0hfm0hg1m4r4jk4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; SM-J3109 Build/LMY47X) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/66.0.3359.181 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Login->login[ D:\web\mshop\shop\index\controller\Login.php ]
+[ info ] [ VIEW ] ./themes/default/index/login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:49:10+08:00 ] 39.105.128.71 GET ct.demo88.top/index/index/pcenter
+[运行时间：0.040000s] [吞吐率：25.00req/s] [内存消耗：2,280.78kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'pcenter',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; MI 5X Build/OPM1.171019.019; wv) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/70.0.3538.75 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+  '/index/index/pcenter' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->pcenter[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./themes/default/index/index\pcenter.html [ array (
+  0 => 'top_nav',
+  1 => 'user_name',
+  2 => 'user_phone',
+  3 => 'user_photo',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-06-30T17:56:55+08:00 ] 116.198.10.6 GET ct.demo88.top/
+[运行时间：0.080000s] [吞吐率：12.50req/s] [内存消耗：2,165.48kb] [文件加载：50]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'host' => 'ct.demo88.top',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 10.0.0; vivo Y85 Build/OPM1.171019.011) AppleWebKit/605.1.15 (KHTML, like Gecko) Chrome/60.0.3112.113 Mobile Safari/604.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File

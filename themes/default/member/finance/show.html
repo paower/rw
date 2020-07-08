@@ -1,0 +1,113 @@
+{extend name="./shop/admin/view/public/base.html" /}
+{block name="content"}
+<?php use think\Db; ?>
+ 
+	<div class="page-header">
+		<h1>
+			{$breadcrumb2}
+			<small>
+				<i class="ace-icon fa fa-angle-double-right"></i>
+				{$crumbs}
+			</small>
+		</h1>
+	</div>	
+	<ul class="nav nav-tabs">
+		
+	  <li class="active"><a href="#tab-order" data-toggle="tab">详情</a></li>
+	</ul>
+	<div class="tab-content">
+		<div class="tab-pane active" id="tab-order">
+			<table class="table table-bordered">
+				<tr>
+				    <td>ID</td>
+				    <td>{$finance.finance_id}</td>
+				</tr>
+				<tr>
+					<td>会员账号(手机号)</td>
+					<td>{$finance.user_phone}</td>
+				</tr>
+				<tr>
+		            <td>会员名称</td>
+		            <td>
+		            	{$finance.user_name}
+		            </td>
+		         </tr>
+				<tr>
+					<td>会员银行名称</td>
+					<td>					
+						{$finance.bank_name}
+					</td>
+				</tr>
+				<tr>
+				    <td>会员支行名称</td>
+				    <td>{$finance.bank_name2}</td>
+				</tr>
+				  <tr>
+				    <td>会员银行开户人</td>
+				    <td>{$finance.bank_user}</td>
+				</tr> 
+				<tr>
+				    <td>会员银行卡号</td>
+				    <td>
+				    	{$finance.bank_num}
+				    </td>
+				</tr>
+				<tr>
+				    <td>类型</td>
+				    <td>
+				    	{if condition="$finance.type == 1"}
+							充值
+						{else /}
+							提现
+						{/if}
+				    </td>
+				</tr>
+				<tr>
+				    <td>状态</td>
+				    <td>
+				    	{if condition="$finance.state eq 1"}
+							待审核
+						{elseif condition="$finance.state eq 2"/}
+							已完成
+						{elseif condition="$finance.state eq 3"/}
+							已取消
+						{/if}
+				    </td>
+				</tr>     
+				<tr>
+					<td>金额</td>
+					<td>¥{$finance.price}</td>
+				</tr>  
+				<tr>
+					<td>生成时间</td>
+					<td>{$finance.creation_time|date='Y/m/d H:i:s',###}</td>
+				</tr>
+				<tr>
+					<td>完成时间</td>
+					<td>
+						{if condition="$finance.complete_time == '' "}
+							无
+						{else/}
+							{$finance.complete_time|date='Y/m/d H:i:s',###}
+						{/if}
+					</td>
+				</tr>
+				<tr>
+					<td>凭证</td>
+					<td>
+						{if condition="$finance.voucher == '' "}
+							无
+						{else/}
+							<img src="__UPLOADS__/{$finance.voucher}" />
+						{/if}
+					</td>
+				</tr>
+				</table>
+		</div>	
+	</div>
+{/block}
+{block name="javascript"}
+<script>	
+
+</script>
+{/block}

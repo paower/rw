@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>收益</title>
+		<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<link href="__PUBLIC__/css/balance.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+		<section class="aui-flexView">
+			<section class="aui-scrollView">
+				<header class="aui-navBar aui-navBar-fixed">
+					<a href="javascript:;" onclick="history.go(-1)" class="aui-navBar-item">
+						<i class="icon icon-return"></i>
+
+					</a>
+					<span class="billhead_title">收益</span>
+				</header>
+				{volist name="list" id="item" key="index"}
+					<div class="aui-cells">
+						<a href="javascript:;" class="aui-cells-cell">
+							<div class="aui-cell-hd">
+								<h4>购物返还</h4>
+								{if condition="$item.complete_time != ''"}
+									<p>{$item.complete_time|date="Y-m-d",###}</p>
+								{else /}
+									<p>{$item.creation_time|date="Y-m-d",###}</p>
+								{/if}
+							</div>
+							<div>
+								<p>+{$item.price}</p>
+								<p class="p_text">
+									{if condition = "$item.state == 1"}
+										发放中
+									{elseif condition="$item.state == 2"/}
+										已发放
+									{/if}
+								</p>
+							</div>
+						</a>
+					</div>
+				{/volist}
+			</section>
+		</section>
+	</body>
+
+</html>

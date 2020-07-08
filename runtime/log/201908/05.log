@@ -1,0 +1,263 @@
+---------------------------------------------------------------
+[ 2019-08-05T19:16:12+08:00 ] 121.32.179.212 GET mshop.demolink.top/
+[运行时间：0.417000s] [吞吐率：2.40req/s] [内存消耗：2,755.34kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mshop.demolink.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=1696064496e86-018fe7bcf35b28-43480420-fa000-169606449704e6; pgv_pvi=5325103104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T19:16:14+08:00 ] 121.32.179.212 GET mshop.demolink.top/favicon.ico
+[运行时间：0.029000s] [吞吐率：34.48req/s] [内存消耗：1,372.30kb] [文件加载：33]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mshop.demolink.top',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://mshop.demolink.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=1696064496e86-018fe7bcf35b28-43480420-fa000-169606449704e6; pgv_pvi=5325103104',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T19:16:17+08:00 ] 121.32.179.212 GET mshop.demolink.top/admin
+[运行时间：0.052000s] [吞吐率：19.23req/s] [内存消耗：1,862.02kb] [文件加载：46]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mshop.demolink.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=1696064496e86-018fe7bcf35b28-43480420-fa000-169606449704e6; pgv_pvi=5325103104',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T19:16:17+08:00 ] 121.32.179.212 GET mshop.demolink.top/admin/Login/login
+[运行时间：0.039000s] [吞吐率：25.64req/s] [内存消耗：1,800.07kb] [文件加载：44]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mshop.demolink.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=1696064496e86-018fe7bcf35b28-43480420-fa000-169606449704e6; pgv_pvi=5325103104; PHPSESSID=mb0stdg1gbdbo7ehkl47p5h9u0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Login/login' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\web\mshop\shop\admin\controller\Login.php ]
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] ./shop/admin\view\public\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T19:16:25+08:00 ] 121.32.179.212 POST mshop.demolink.top/admin/Login/login
+[运行时间：0.124000s] [吞吐率：8.06req/s] [内存消耗：2,599.27kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mshop.demolink.top',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://mshop.demolink.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mshop.demolink.top/admin/Login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=1696064496e86-018fe7bcf35b28-43480420-fa000-169606449704e6; pgv_pvi=5325103104; PHPSESSID=mb0stdg1gbdbo7ehkl47p5h9u0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Login/login' => '',
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\web\mshop\shop\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T19:16:26+08:00 ] 121.32.179.212 GET mshop.demolink.top/admin/Index/index
+[运行时间：0.115000s] [吞吐率：8.70req/s] [内存消耗：2,966.97kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mshop.demolink.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://mshop.demolink.top/admin/Login/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=1696064496e86-018fe7bcf35b28-43480420-fa000-169606449704e6; pgv_pvi=5325103104; PHPSESSID=mb0stdg1gbdbo7ehkl47p5h9u0',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Index/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\web\mshop\shop\admin\controller\Index.php ]
+[ info ] [ VIEW ] ./shop/admin\view\index\index.html [ array (
+  0 => 'admin_menu',
+  1 => 'total_order',
+  2 => 'today_order',
+  3 => 'total_money',
+  4 => 'today_money',
+  5 => 'user_action_total',
+  6 => 'today_user_action',
+  7 => 'today_member',
+  8 => 'member_count',
+  9 => 'user_action',
+  10 => 'uc_empty',
+  11 => 'order_list',
+  12 => 'empty',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-05T19:16:32+08:00 ] 121.32.179.212 GET mshop.demolink.top/member/member_backend/index
+[运行时间：0.094000s] [吞吐率：10.64req/s] [内存消耗：2,816.48kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'member',
+    1 => 'member_backend',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mshop.demolink.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://mshop.demolink.top/admin/Index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=1696064496e86-018fe7bcf35b28-43480420-fa000-169606449704e6; pgv_pvi=5325103104; PHPSESSID=mb0stdg1gbdbo7ehkl47p5h9u0',
+)
+[ info ] [ PARAM ] array (
+  '/member/member_backend/index' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\member\controller\MemberBackend->index[ D:\web\mshop\shop\member\controller\MemberBackend.php ]
+[ info ] [ VIEW ] ./themes/default/member/member_backend\index.html [ array (
+  0 => 'admin_menu',
+  1 => 'breadcrumb1',
+  2 => 'breadcrumb2',
+  3 => 'list',
+  4 => 'empty',
+) ]
+[ info ] [ LOG ] INIT File

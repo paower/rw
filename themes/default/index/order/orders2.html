@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no"/>
+<link href="__PUBLIC__/css/reset.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/indent-details.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="near-box">
+    <a href="javascript:;" onclick="history.go(-1)" class="jd-qrdd-topbox">确认订单</a>
+    <div class="jd-qrdd-bigbox">
+        <!--地址部分-->
+        <div class="jd-qrdd-a1">
+        	{if condition="$address != ''"}
+        		<input type="hidden" id="address_id" name="address_id" value="{$address.address_id}" />
+	        	<span class="qrdd-a1-t1">{$address.name}</span>
+	        	<span class="qrdd-a1-t1">{$address.telephone}</span>
+	        	{if condition="$address.default == 2"}
+	        		<span class="qrdd-a1-t2">默认</span>
+	        	{/if}
+	        	<div class="qrdd-a1-b1">
+	        		<span class="qrdd-a1-img1"></span>
+	        		<span class="qrdd-a1-t3"><?php echo get_area_name($address['province_id']); ?>
+					            	<?php echo get_area_name($address['city_id']); ?>
+					            	<?php echo get_area_name($address['country_id']); ?> {$address.address}</span>
+	        	</div>
+	        	<span class="qrdd-a1-img2"></span>
+        	{else /}
+        		<span class="qrdd-a1-t1">暂未设置默认收货地址，点击设置！</span>
+        	{/if}
+        </div>
+        <!--商品部分-->
+        <div class="zjzz-buylist-goods1">
+            <div class="zjzz-buylist-gtime">
+                <span class="zjzz-buylist-gtime1"><i class="indent-details-img2"></i>平台自营店</span>
+                <span class="zjzz-buylist-gtime2">联系客服</span>
+            </div>
+            {volist name="goods" id="item" key="index"}
+	            <div class="zjzz-buylist-det">
+	            	<input type="hidden" name="goods_id" class="goods_id" value="{$item.goods_id}" />
+	                <img src="__UPLOADS__/{$item.image}"/>
+	                <div class="zjzz-buylist-gdetail">
+	                	<div style="float: left;">
+	                    	<p class="name_text">{$item.name}</p>
+	                    	<p class="type_text">
+	                    		{volist name="item.attribute_value" id="item2" key="index2"}
+	                    			{$item2.name}：{$item2.value_name} 
+	                    		{/volist}
+	                    	</p>
+	                    </div>
+	                    <span class="zjzz-buylist-gmoney">
+	                       	<i class="zjzz-buylist-gm1">￥{$item.price}</i>
+	                        <i class="zjzz-buylist-gm2">x{$item.num}</i>
+	                    </span>
+	                   
+	                </div>
+	            </div>
+	        {/volist}
+        </div>
+        <input type="hidden" name="cart_id" id="cart_id" value="{$cart_id}" />
+        <!--商品金额部分-->
+        <div class="indent-details-box2">
+            <span class="indent-details-text4">应付总额</span>
+            <span class="indent-details-text5">￥{$zprice,2|number_format}</span>
+            <input name="zprice" id="zprice" type="hidden" value="{$zprice}" />
+        </div>
+        <div class="indent-details-box2">
+            <span class="indent-details-text4 tcolor-grey">商品总价</span>
+            <span class="indent-details-text5 tcolor-black">￥{$goodzprice,2|number_format}</span>
+            <input name="goodzprice" id="goodzprice" type="hidden" value="{$goodzprice}" />
+        </div>
+        <div class="indent-details-box2">
+            <span class="indent-details-text4 tcolor-grey">运费</span>
+            <span class="indent-details-text5 tcolor-black">{$freight,2|number_format}</span>
+            <input name="freight" id="freight" type="hidden" value="{$freight}" />
+        </div>
+        <!--<div class="indent-details-box2">
+            <span class="indent-details-text4 tcolor-grey">发票信息</span>
+            <span class="indent-details-text5 tcolor-black">不需要发票</span>
+        </div>-->
+        <!--订单编号部分-->
+        <!--<div class="indent-details-box3">
+            <p>订单编号:201711024866544846</p>
+            <p>支付方式:支付宝</p>
+            <p>支付交易单号:201711024866544846144</p>
+            <p>下单时间:2017-11-01 21:15:23</p>
+        </div>-->
+		<div class="shop-cart-total">
+			<span class="scart-total-text2">合计：￥</span>
+			<span id="AllTotal" class="scart-total-text3">{$zprice,2|number_format}</span>
+			<a href="javascript:;" onclick="sub()" class="scart-total-text4">提交订单<i id="selectedTotal"></i></a>
+			<span class="delete hide"></span>
+		</div>
+    </div>
+</div>
+</body>
+<script src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script src="__PUBLIC__/js/layer/layer.js"></script>
+<script>
+	//生成订单
+	function sub(){
+		var goods_id = '';
+		$(".goods_id").each(function(){
+			goods_id += $(this).val() + ',';
+		});
+		
+		var orderdata = [];
+		var index = 0;
+		{volist name="goods" id="item" key="index"}
+			orderdata[{$index} - 1] = [{$item.goods_id},{$item.num},"{$item.attribute_value_id}"];
+			//orderdata[{$item.goods_id}] = [{$item.num},"{$item.attribute_value_id}"];
+		{/volist}
+		//console.log(orderdata);
+		$.post(
+			"{:url('Order/subOrder')}",
+			{
+				address_id:$('#address_id').val(),
+				goods_id:goods_id,
+				price:$('#zprice').val(),
+				goodzprice:$('#goodzprice').val(),
+				freight:$('#freight').val(),
+				orderdata:orderdata,
+				cart_id:$('#cart_id').val(),
+			},
+			function(msg){
+				if(msg.success){
+					location.href="{:url('Pay/payment')}?id="+msg.data;
+				}else{
+					layer.msg('提交失败');
+					return false;
+				}
+			}
+		);
+	}
+</script>
+</html>

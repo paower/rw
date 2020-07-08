@@ -1,0 +1,152 @@
+{extend name="./shop/admin/view/public/base.html" /}
+{block name="content"}
+<div class="page-header">
+		<h1>
+			{$breadcrumb2}
+			<small>
+				<i class="ace-icon fa fa-angle-double-right"></i>
+				{$crumbs}
+			</small>
+		</h1>
+</div>	
+	<div class="tab-content">		
+		<input class="ADDRESS" name="address_id" type="hidden" value="{$Request.param.id}" />		
+		<input class="ADDRESS" name="uid" type="hidden" value="{$Request.param.uid}" />	
+		<div class="tab-pane active" id="tab-member">
+			<table class="table table-binfoed">
+				<tr>
+				    <td>ID</td>
+				    <td>{$data.address_id}</td>
+				</tr>
+				<tr>
+					<td>收货人姓名</td>
+					<td>
+						<input class="ADDRESS" name="name" type="text" style="width: 400px;" value="{$data.name}" />
+					</td>
+				</tr>
+				<tr>
+				    <td>手机号</td>
+				    <td><input class="ADDRESS" name="telephone" type="number" style="width:400px;" value="{$data.telephone}" /></td>
+				</tr> 
+				<tr>
+					<td>所在地</td>
+					<td>
+						<select class="ADDRESS" id="province" name="province">
+							<option value="change" selected>选择省份</option>
+							{volist name="province" id ='item' key="index"}
+								<option {if condition="$data.province_id == $item.area_id"}selected{/if} value="{$item.area_id}" >{$item.area_name}</option>
+							{/volist}
+						</select>
+						<select class="ADDRESS" id="city" name="city">
+							<option value="change" selected>选择市</option>
+							{volist name="city" id ='item' key="index"}
+								<option {if condition="$data.city_id == $item.area_id"}selected{/if} value="{$item.area_id}" >{$item.area_name}</option>
+							{/volist}
+						</select>
+						<select class="ADDRESS" id="country" name="country">
+							<option value="change" selected>选择县/区</option>
+							{volist name="country" id ='item' key="index"}
+								<option {if condition="$data.country_id == $item.area_id"}selected{/if} value="{$item.area_id}" >{$item.area_name}</option>
+							{/volist}
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>详细地址</td>
+					<td>
+						<input class="ADDRESS" name="address" type="text" style="width: 400px;" value="{$data.address}" />
+					</td>
+				</tr>
+				<tr>
+					<td>是否默认</td>
+					<td>	
+						<label class="radio-inline">
+							<input class="ADDRESS" type="radio" {if condition="$data.default == 1"}checked{/if} name="default" value="1"/>否
+						</label>
+						<label class="radio-inline">
+							<input class="ADDRESS" type="radio" {if condition="$data.default == 2"}checked{/if} name="default" value="2"/>是
+						</label>
+					</td>
+				</tr>
+			</table>
+			<div class="form-group">
+				<div style="margin-left:20px;">
+					<input name="send" type="submit" value="提交" class="btn btn-primary" id="btn" />
+				</div>
+			</div>
+		</div>
+	</div>
+	
+{/block}
+{block name="javascript"}
+<script>
+var back_index="{:url('member_backend/edit',['id'=>$Request.param.uid])}";
+
+//提交
+$('#btn').click(function(){
+	if($('#name').val()==''){
+		alert('收货人姓名必填');
+		return false;
+	};
+	if($('#address').val()==''){
+		alert('详细地址必填');
+		return false;
+	};
+	if($('#telephone').val()==''){
+		alert('手机号码必填');
+		return false;
+	};
+	$.post(
+		'{:url("MemberBackend/editAddress")}',
+		{
+			default:$('.ADDRESS:radio:checked').val(),
+			name:$(".ADDRESS[name='name']").val(),
+			telephone:$(".ADDRESS[name='telephone']").val(),
+			province:$(".ADDRESS[name='province']").val(),
+			city:$(".ADDRESS[name='city']").val(),
+			country:$(".ADDRESS[name='country']").val(),
+			address:$(".ADDRESS[name='address']").val(),
+			address_id:$(".ADDRESS[name='address_id']").val(),
+			uid:$(".ADDRESS[name='uid']").val(),
+		},
+		function(d){
+			art_dialog(d,back_index);
+		}
+	);
+});
+	
+//城市选择
+$('#province').bind("change",function(){
+	$('#province option[value="change"]').remove();
+	var province_id = $('#province option:selected').val();
+	//var city = JSON.stringify({$json_city});
+	var city = {$json_city};
+	var len = city.length;
+	$("#city").empty();
+	for(var i = 0;i<len;i++){
+		if(city[i].area_parent_id == province_id){
+			var Value = city[i].area_id;
+			var Text = city[i].area_name;
+			$("#city").append("<option value='"+Value+"'>"+Text+"</option>");
+		}
+	}
+});
+
+$('#city').bind("change",function(){
+	$('#city option[value="change"]').remove();
+	var city_id = $('#city option:selected').val();
+	//var city = JSON.stringify({$json_city});
+	var country = {$json_country};
+	var len = country.length;
+	$("#country").empty();
+	for(var i = 0;i<len;i++){
+		if(country[i].area_parent_id == city_id){
+			var Value = country[i].area_id;
+			var Text = country[i].area_name; 
+			$("#country").append("<option value='"+Value+"'>"+Text+"</option>");
+		}
+	}
+});
+
+</script>							
+{/block}

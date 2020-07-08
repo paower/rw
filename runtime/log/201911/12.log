@@ -1,0 +1,99 @@
+---------------------------------------------------------------
+[ 2019-11-12T14:04:29+08:00 ] 42.120.161.51 GET shop3.demolink.top/Login/login.html
+[运行时间：0.015600s] [吞吐率：64.10req/s] [内存消耗：1,371.70kb] [文件加载：33]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Login',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'shop3.demolink.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 YisouSpider/5.0 Safari/537.36',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  '/Login/login_html' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-12T14:04:30+08:00 ] 106.11.153.252 GET shop3.demolink.top/robots.txt
+[运行时间：0.031200s] [吞吐率：32.05req/s] [内存消耗：1,370.88kb] [文件加载：33]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'robots',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'shop3.demolink.top',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn,en-us,zh-tw,en-gb,en;',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'YisouSpider',
+)
+[ info ] [ PARAM ] array (
+  '/robots_txt' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-12T14:04:31+08:00 ] 106.11.153.252 GET shop3.demolink.top/robots.txt
+[运行时间：0.031200s] [吞吐率：32.05req/s] [内存消耗：1,370.83kb] [文件加载：33]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'robots',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'shop3.demolink.top',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn,en-us,zh-tw,en-gb,en;',
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'user-agent' => 'YisouSpider',
+)
+[ info ] [ PARAM ] array (
+  '/robots_txt' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-12T14:04:32+08:00 ] 183.199.184.117 GET shop3.demolink.top/robots.txt
+[运行时间：0.031200s] [吞吐率：32.05req/s] [内存消耗：1,370.98kb] [文件加载：33]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'robots',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'shop3.demolink.top',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept-language' => 'zh-cn,en-us,zh-tw,en-gb,en;',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+  '/robots_txt' => '',
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,93 @@
+{extend name="./shop/admin/view/public/base.html" /}
+{block name="content"}
+<div class="page-header">
+	<h1>
+		{$breadcrumb2}
+		<small>
+			<i class="ace-icon fa fa-angle-double-right"></i>
+			{$crumbs}
+		</small>
+	</h1>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="form-horizontal">
+			<div class="form-group required">
+				<label class="col-sm-2 control-label">优惠券编号前缀：</label>
+				<div class="col-sm-10">
+					<input class="form-control COUPON" type="text" placeholder="优惠券编号前缀" name="conpon_prefix" value="" />
+				</div>
+			</div>
+
+			<div class="form-group required">
+				<label class="col-sm-2 control-label">优惠券名称：</label>
+				<div class="col-sm-10">
+					<input class="form-control COUPON" type="text" placeholder="优惠券名称" name="coupon_name" value="" />
+				</div>
+			</div>
+			<div class="form-group required">
+				<label class="col-sm-2 control-label">优惠券类型：</label>
+				<div class="col-sm-10">
+					<label class="radio-inline">
+						<input class="COUPON" type="radio" checked value="1" name="coupon_type">满减
+					</label>
+					<label class="radio-inline">
+						<input class="COUPON" type="radio"  value="2" name="coupon_type">折扣
+					</label>
+				</div>
+			</div>
+			<div class="form-group required">
+				<label class="col-sm-2 control-label">使用要求金额：</label>
+				<div class="col-sm-10">
+					<input class="form-control COUPON" type="number" placeholder="不填写为无条件使用" name="coupon_limit" value="" />
+				</div>
+			</div>
+			<div class="form-group required">
+				<label class="col-sm-2 control-label">值：</label>
+				<div class="col-sm-10">
+					<input class="form-control COUPON" type="number" placeholder="值" name="coupon_value" value="" />
+				</div>
+			</div>
+			<div class="form-group required">
+				<label class="col-sm-2 control-label">优惠券数量：</label>
+				<div class="col-sm-10">
+					<input class="form-control COUPON" type="number" placeholder="数量" name="coupon_num" value="" />
+				</div>
+			</div>
+			<div class="form-group required">
+				<label class="col-sm-2 control-label">描述：</label>
+				<div class="col-sm-10">
+					<input class="form-control COUPON" type="text" placeholder="描述" name="describe" value="" />
+				</div>
+			</div>
+			<div class="form-group required">
+				<label class="col-sm-2 control-label">期限（天）：</label>
+				<div class="col-sm-10">
+					<input class="form-control COUPON" type="number" placeholder="期限(天)" name="term" value="" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-1 control-label no-padding-left"> </label>
+				<div class="col-sm-11">
+					<input id="send" type="submit" value="提交" class="btn btn-primary" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{/block}
+{block name="javascript"}
+
+<script>
+	var back_index = "{:url('Coupon/index')}";
+	$('#send').click(function() {
+		$.post(
+			'{:url("Coupon/add")}',
+			$('.COUPON'),
+			function(d) {
+				art_dialog(d, back_index);
+			}
+		);
+	});
+</script>
+{/block}

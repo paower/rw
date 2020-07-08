@@ -1,0 +1,139 @@
+---------------------------------------------------------------
+[ 2019-08-29T00:47:52+08:00 ] 121.32.177.14 GET mshop.demolink.top/
+[运行时间：0.078000s] [吞吐率：12.82req/s] [内存消耗：2,755.88kb] [文件加载：53]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mshop.demolink.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mshop.demolink.top/admin/Goods/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=16b13e5fd8d1ab-0205f6b4cc8691-3e385b04-15f900-16b13e5fd8e15e; PHPSESSID=mp0pcngind7cqdib9tujng0ip1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\index.html [ array (
+  0 => 'top_nav',
+  1 => 'brand',
+  2 => 'guesslike',
+  3 => 'newlist',
+  4 => 'popular',
+  5 => 'frontend_images',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-29T00:47:53+08:00 ] 121.32.177.14 GET mshop.demolink.top/favicon.ico
+[运行时间：0.031200s] [吞吐率：32.05req/s] [内存消耗：1,372.31kb] [文件加载：33]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mshop.demolink.top',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://mshop.demolink.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=16b13e5fd8d1ab-0205f6b4cc8691-3e385b04-15f900-16b13e5fd8e15e; PHPSESSID=mp0pcngind7cqdib9tujng0ip1',
+)
+[ info ] [ PARAM ] array (
+  '/favicon_ico' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-29T00:47:58+08:00 ] 121.32.177.14 GET mshop.demolink.top/index/Index/classify
+[运行时间：0.078000s] [吞吐率：12.82req/s] [内存消耗：2,801.95kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'classify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mshop.demolink.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mshop.demolink.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=16b13e5fd8d1ab-0205f6b4cc8691-3e385b04-15f900-16b13e5fd8e15e; PHPSESSID=mp0pcngind7cqdib9tujng0ip1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/classify' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->classify[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\classify.html [ array (
+  0 => 'top_nav',
+  1 => 'categoryParent',
+  2 => 'categorySub',
+  3 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-08-29T00:47:58+08:00 ] 121.32.177.14 GET mshop.demolink.top/index/Index/classify
+[运行时间：0.062400s] [吞吐率：16.03req/s] [内存消耗：2,801.95kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\mshop\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'Index',
+    2 => 'classify',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mshop.demolink.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mshop.demolink.top/index/Index/classify',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=16b13e5fd8d1ab-0205f6b4cc8691-3e385b04-15f900-16b13e5fd8e15e; PHPSESSID=mp0pcngind7cqdib9tujng0ip1',
+)
+[ info ] [ PARAM ] array (
+  '/index/Index/classify' => '',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ RUN ] app\index\controller\Index->classify[ D:\web\mshop\shop\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index/index\classify.html [ array (
+  0 => 'top_nav',
+  1 => 'categoryParent',
+  2 => 'categorySub',
+  3 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File

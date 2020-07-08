@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no"/>
+<link href="__PUBLIC__/css/pj.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/reset.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/indent-details.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="near-box">
+    <div class="header">
+		<a href="javascript:;" onclick="history.go(-1)" class="left"></a>
+		退款申请
+	</div>
+    <div class="jd-qrdd-bigbox">
+        <div class="zjzz-buylist-goods1">
+        	<input type="hidden" name="order_id" id="order_id" value="{$Request.param.id}" />
+            <div class="zjzz-buylist-gtime">
+                <span class="zjzz-buylist-gtime1">订单号：{$order.order_num_alias}</span>
+            </div>
+            {volist name="order.goods_list" id="item" key="index"}
+	            <div class="zjzz-buylist-det">
+	                <img src="__UPLOADS__/{$item.image}"/>
+	                <div class="zjzz-buylist-gdetail">
+	                	<div>
+		                    <span class="zjzz-buylist-gtit1">{$item.name}</span>
+		                    <span class="zjzz-buylist-gmoney">
+		                        <i class="zjzz-buylist-gm1">￥{$item.price}</i>
+		                        <i class="zjzz-buylist-gm2">x{$item.num}</i>
+		                    </span>
+	                    </div>
+	                    <p class="zjzz-buylist-gm2">
+	                    	{volist name="item.attribute_value" id="item2" key="index2"}
+	                    		{$item2.name}：{$item2.value_name}
+	                    	{/volist}
+	                    </p>
+	                </div>
+	            </div>
+	        {/volist}
+        </div>
+       	<div class="tb-pj-a2">
+       	  <textarea id="refund_content" placeholder="请在此说明您要退款的理由..." class="tbpj-a2-input"></textarea>
+       	</div>
+        <div class="serve-type-box1">
+	       	<span class="serve-type-text2">上传图片：</span>
+	      	<span class="serve-type-img2">
+	       	   	<input onchange="uploads_img()" id="refund_image" type="file" name="refund_image" class="serve-type-btn1">
+	          	<i class="serve-type-img3"></i>
+	           	<i class="serve-type-text3">上传图片(最多一张)</i>
+	       	</span>
+	        <span id="img_box" class="serve-type-img2" style="display: none;">
+	        	<img src="" style="height: 100%;width: 100%;position: absolute;top: 0;left: 0;" />
+	        </span>
+        </div>
+       <a href="javascript:;" onclick="sub()" class="tb-pj-c1">提交申请</a>
+    </div>
+</div>
+</body>
+<script src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script src="__PUBLIC__/js/layer/layer.js"></script>
+<script>
+	function sub(){
+		var refund_image = $("#refund_image").prop('files');
+		var order_id = $('#order_id').val();
+		var refund_content = $('#refund_content').val();
+		if(refund_content.length <= 0){
+			layer.msg('请填写退款理由！');
+			return false;
+		}
+		if(order_id == ""){
+			layer.msg('订单出错！');
+			return false;
+		}
+		if(refund_image.length == 0){
+			layer.msg('请选择文件');
+			return false;
+		}
+		var formdata = new FormData();
+	    formdata.append("refund_image", refund_image[0]);
+	    formdata.append("order_id",order_id);
+	    formdata.append("refund_content",refund_content);
+		$.ajax({
+			url: "{:url('Order/refund')}",
+			type: 'POST',
+			data: formdata,
+			cache:false,
+			contentType:false,
+			processData:false,
+			success:function (msg) {
+				if (msg.success) {
+					layer.msg(msg.text);
+				} else {
+					layer.msg(msg.text);
+				}
+			}
+	   	}) 
+	}
+	function uploads_img(){
+		var file = $("#refund_image").prop('files');
+		//		console.log(file);
+		var Url = getObjectURL(file[0]);
+		if(Url){
+			$('#img_box img').attr("src",Url);
+			$('#img_box').show();
+		}
+	}
+	
+	function getObjectURL(file) {
+		var url = null ;
+		if(window.createObjectURL!=undefined){
+			url = window.createObjectURL(file) ;
+		}else if(window.URL!=undefined){
+			url = window.URL.createObjectURL(file) ;
+		}else if(window.webkitURL!=undefined){ 
+			url = window.webkitURL.createObjectURL(file) ;
+		}
+		return url ;
+	}
+</script>
+</html>

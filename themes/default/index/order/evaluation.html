@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no"/>
+<link href="__PUBLIC__/css/pj.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/reset.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script src="__PUBLIC__/js/jquery.raty.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="near-box">
+    <div class="header">
+		<a href="javascript:;" onclick="history.go(-1)" class="left"></a>
+		我的评价
+	</div>
+    <div class="jd-qrdd-bigbox">
+       <div class="tb-pj-a1">
+       	  <span class="tbpj-a1-i1"><img src="__UPLOADS__/{$evaluate.image}"></span>
+       	  <span class="tbpj-a1-t1">{$evaluate.name}</span>
+       </div>
+       <div class="tb-pj-a2">
+       	  <textarea class="tbpj-a2-input" readonly="readonly">{$evaluate.content}</textarea>
+       </div>
+       <div class="tb-pj-a1">
+	       	<span class="tbpj-a1-t4">描述相符</span>
+	       	<div class="tbpj-a1-b1">
+			    <div id="star1">
+			    	<?php for($i = 0; $i < $evaluate['rate']; $i++){ ?>
+			    		<img src="__PUBLIC__/images/star-on-big.png" />
+			    	<?php } ?>
+			    </div>
+				<div id="result1"></div>
+			</div>
+       </div>
+       <div class="serve-type-box1">
+	       	<span class="serve-type-text2">图片：</span>
+	        <span id="img_box" class="serve-type-img2">
+	        	<img src="__UPLOADS__/{$evaluate.pj_image}" style="height: 100%;width: 100%;position: absolute;top: 0;left: 0;" />
+	        </span>
+        </div>
+    </div>
+</div>
+<script src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+
+</html>

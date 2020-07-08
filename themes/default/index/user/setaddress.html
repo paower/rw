@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no"/>
+<link rel="stylesheet" href="__PUBLIC__/css/ydui.css" type="text/css"/>
+<link rel="stylesheet" href="__PUBLIC__/css/demo.css" type="text/css"/>
+<link href="__PUBLIC__/css/reset.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/receiving-adress.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script src="__PUBLIC__/js/ydui.flexible.js"></script>
+<script src="__PUBLIC__/js/layer/layer.js"></script>
+</head>
+<body>
+<div class="near-box">
+	<div class="header">
+		<a href="javascript:;" onclick="history.go(-1)" class="left"></a>
+		收货地址
+	</div>
+	<div class="bigbox">
+		 <div class="receiv-text1">地址信息</div>
+		 <input type="hidden" name="address_id" id="address_id" value="{$Request.param.id}">
+         <div class="receiv-box1"><input id="name" type="text" name="name" value="{$address.name}" class="receiv-input1" placeholder="收货人姓名（请使用真实姓名）"></div>
+         <div class="receiv-box1"><input type="number" id="telephone" name="telephone" value="{$address.telephone}" class="receiv-input1" placeholder="手机号码"></div>
+         <div class="delivery-layer-box">
+    		<div class="cell-item">
+                <div class=" cell-arrow">
+					<a href="javascript:;" class="btn btn-info btn-lg active" role="button" id="sel_city">点击选取省市区县</a>
+					<input type="hidden" id="province_id" value="{$address.province_id}" />
+					<input type="hidden" id="city_id" value="{$address.city_id}" />
+					<input type="hidden" id="country_id" value="{$address.country_id}" />
+                </div>
+            </div>
+	    </div>
+	    <div class="receiv-box2"><textarea id="address" class="receiv-input2" placeholder="详细地址">{$address.address}</textarea></div>
+	    <div class="receiv-box2" style="font-size: 13px;">
+	     	<div class="receiv-text1">是否默认</div>
+	     	<input type="radio" name="Default" value="2" {if condition="$address.default == 2"}checked="checked"{/if}/>是
+	     	<input type="radio" name="Default" value="1" {if condition="$address.default == 1"}checked="checked"{/if}/>否
+	    </div>
+         <button id="edit" onclick="sub()" class="set-text1">保存</button>
+		 <button id="add" onclick="sub2()" class="set-text1">保存</button>
+	</div>
+
+</div>
+<script src="__PUBLIC__/js/picker.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var address_id = $('#address_id').val();
+		if(address_id == ''){
+			$('#add').show();
+			$('#edit').hide();
+		}else{
+			$('#edit').show();
+			$('#add').hide();
+		}
+	});
+	function sub2(){
+		var name = $('#name').val();
+		var telephone = $('#telephone').val();
+		var address = $('#address').val();
+		var Default = $('input[name="Default"]:checked').val();
+		var province_id = $('#province_id').val();
+		var city_id = $('#city_id').val();
+		var country_id = $('#country_id').val();
+		if(name == ''){
+			layer.msg('请输入收货人姓名');
+			return false;
+		}
+		if(telephone == ''){
+			layer.msg('请输入联系电话');
+			return false;
+		}
+		if(address == ''){
+			layer.msg('请输入详细地址');
+			return false;
+		}
+		
+		$.ajax({
+			type:'post',
+			url:"{:url('User/addaddress')}",
+			data:{
+				name:name,
+				telephone:telephone,
+				address:address,
+				Default:Default,
+				province_id:province_id,
+				city_id:city_id,
+				country_id:country_id
+			},
+			success:function(msg){
+				if (msg.success) {
+					layer.msg(msg.text);
+					setTimeout('url()',1000);
+				} else {
+					layer.msg(msg.text);
+				}
+			}
+		});
+	}
+	
+	function sub(){
+		var address_id = $('#address_id').val();
+		var name = $('#name').val();
+		var telephone = $('#telephone').val();
+		var address = $('#address').val();
+		var Default = $('input[name="Default"]:checked').val();
+		var province_id = $('#province_id').val();
+		var city_id = $('#city_id').val();
+		var country_id = $('#country_id').val();
+		if(name == ''){
+			layer.msg('请输入收货人姓名');
+			return false;
+		}
+		if(telephone == ''){
+			layer.msg('请输入联系电话');
+			return false;
+		}
+		if(address == ''){
+			layer.msg('请输入详细地址');
+			return false;
+		}
+		
+		$.ajax({
+			type:'post',
+			url:"{:url('User/setaddress')}",
+			data:{
+				name:name,
+				telephone:telephone,
+				address:address,
+				Default:Default,
+				province_id:province_id,
+				city_id:city_id,
+				country_id:country_id,
+				address_id:address_id
+			},
+			success:function(msg){
+				if (msg.success) {
+					layer.msg(msg.text);
+					setTimeout('url()',1000);
+				} else {
+					layer.msg(msg.text);
+				}
+			}
+		});
+	}
+	function url(){
+		history.go(-1);
+	}
+	
+	var city = {:json_encode($area)};
+	var nameEl = document.getElementById('sel_city');
+	
+	var first = []; /* 省，直辖市 */
+	var second = []; /* 市 */
+	var third = []; /* 镇 */
+	
+	var selectedIndex = [0, 0, 0]; /* 默认选中的地区 */
+	
+	var checked = [0, 0, 0]; /* 已选选项 */
+	
+	function creatList(obj, list){
+	  obj.forEach(function(item, index, arr){
+	  var temp = new Object();
+	  temp.text = item.name;
+	  temp.value = index;
+	  list.push(temp);
+	  })
+	}
+	
+	creatList(city, first);
+	
+	if (city[selectedIndex[0]].hasOwnProperty('sub')) {
+	  creatList(city[selectedIndex[0]].sub, second);
+	} else {
+	  second = [{text: '', value: 0}];
+	}
+	
+	if (city[selectedIndex[0]].sub[selectedIndex[1]].hasOwnProperty('sub')) {
+	  creatList(city[selectedIndex[0]].sub[selectedIndex[1]].sub, third);
+	} else {
+	  third = [{text: '', value: 0}];
+	}
+	
+	var picker = new Picker({
+	    data: [first, second, third],
+		selectedIndex: selectedIndex,
+	    title: '地址选择'
+	});
+	
+	picker.on('picker.select', function (selectedVal, selectedIndex) {
+	  var text1 = first[selectedIndex[0]].text;
+	  var text2 = second[selectedIndex[1]].text;
+	  var text3 = third[selectedIndex[2]] ? third[selectedIndex[2]].text : '';
+	
+	    nameEl.innerText = text1 + ' ' + text2 + ' ' + text3;
+	});
+	
+	picker.on('picker.change', function (index, selectedIndex) {
+	  if (index === 0){
+	    firstChange();
+	  } else if (index === 1) {
+	    secondChange();
+	  }
+	
+	function firstChange() {
+	    second = [];
+	    third = [];
+	    checked[0] = selectedIndex;
+	    var firstCity = city[selectedIndex];
+	    if (firstCity.hasOwnProperty('sub')) {
+	      creatList(firstCity.sub, second);
+	
+	      var secondCity = city[selectedIndex].sub[0]
+	      if (secondCity.hasOwnProperty('sub')) {
+	        creatList(secondCity.sub, third);
+	      } else {
+	        third = [{text: '', value: 0}];
+	        checked[2] = 0;
+	      }
+	    } else {
+	      second = [{text: '', value: 0}];
+	      third = [{text: '', value: 0}];
+	      checked[1] = 0;
+	      checked[2] = 0;
+	    }
+	
+	    picker.refillColumn(1, second);
+	    picker.refillColumn(2, third);
+	    picker.scrollColumn(1, 0)
+	    picker.scrollColumn(2, 0)
+	  }
+	
+	function secondChange() {
+	    third = [];
+	    checked[1] = selectedIndex;
+	    var first_index = checked[0];
+	    if (city[first_index].sub[selectedIndex].hasOwnProperty('sub')) {
+	      var secondCity = city[first_index].sub[selectedIndex];
+	      creatList(secondCity.sub, third);
+	      picker.refillColumn(2, third);
+	      picker.scrollColumn(2, 0)
+	    } else {
+	      third = [{text: '', value: 0}];
+	      checked[2] = 0;
+	      picker.refillColumn(2, third);
+	      picker.scrollColumn(2, 0)
+	    }
+	  }
+	
+	});
+	
+	picker.on('picker.valuechange', function (selectedVal, selectedIndex) {
+		$('#province_id').val(city[selectedVal[0]]['id']);
+		$('#city_id').val(city[selectedVal[0]]['sub'][selectedVal[1]]['id']);
+		$('#country_id').val(city[selectedVal[0]]['sub'][selectedVal[1]]['sub'][selectedVal[2]]['id']);
+	});
+	
+	nameEl.addEventListener('click', function () {
+	    picker.show();
+	});
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no"/>
+<link href="__PUBLIC__/css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/css/goods-details.css" rel="stylesheet" type="text/css"/>
+<script src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script src="__PUBLIC__/js/layer/layer.js"></script>
+</head>
+<body>
+<div class="near-box">
+	<div class="gdetails-header">
+		<a href="javascript:;" onclick="history.go(-1)" class="gdetails-hleft"></a>
+		<div class="gdetails-htbox">
+			{$goods.name}
+		</div>
+		<!--<span class="gdetails-hshare"></span>-->
+	</div>
+	<div class="gdetails-bigbox">
+		 <!--轮播部分-->
+		<div id="slideBox" class="slideBox">
+		        <div class="bd">
+		            <ul>
+		            	{volist name="goods_image" id="item" key="k"}
+		                	<li><a href="javascript:void(0)"><img src="__UPLOADS__/{$item.image}" /></a></li>
+		              	{/volist}
+		            </ul>
+		        </div>
+		        <div class="hd">
+		            <ul></ul>
+		        </div>
+		</div>
+	    <!--轮播部分-->
+	    <!--商品价格部分-->
+		<div class="gdetails-price">
+			<div class="gdetails-price-box1">
+				{if condition="$goods_discount == false"}
+					<span class="gdetails-price-text1">￥{$goods.price}</span>
+				{else/}
+					<span class="gdetails-price-text1">￥{$goods_discount.price}</span>
+					<span class="gdetails-price-text2">原价￥{$goods.price}</span>
+					<span class="gdetails-price-text3">特价</span>
+				{/if}
+			</div>
+			<div class="gdetails-price-box1">
+				<div class="gdetails-price-text5">{$goods_description.summary}</div>
+			</div>
+		</div>
+	    <!--商品价格部分-->
+		<!--商品规格部分-->
+		<div class="gdetails-price">
+			{volist name="attribute" id="item" key="index"}
+				<div class="recommend-box2-text1">
+					<i>{$item.name}： </i>
+					{volist name="item.attribute_value" id="item2" key="index2"}
+						<i attribute_value_id="{$item2.attribute_value_id}" class="sub_sbox {if condition='$index2 == 1'}checked{/if}">{$item2.value_name}</i>
+					{/volist}
+				</div>
+			{/volist}
+		</div>
+		<!--商品规格部分-->
+		<!--商品数量-->
+		<div class="gdetails-price">
+			<div class="recommend-box2-text1">
+				<i>购买数量：</i>
+				<div class="shop-cart-box3">
+					<span class="shop-cart-subtract"></span>
+					<input type="number" size="4" value="0" id="tb_count" class="shop-cart-numer">
+					<span class="shop-cart-add"></span>
+				</div>
+			</div>
+		</div>
+		<!--商品数量-->
+	    <!--图文详情部分-->
+	    <div class="recommend-box1">商品详情</div>
+	    <div class="recommend-box2">
+	    	<span class="recommend-box2-text1"><i>生产地： </i>{$goods.location}</span>
+	    	<span class="recommend-box2-text1"><i>品牌： </i>{$goods_brand.name!=''?$goods_brand.name:'无品牌'}</span>
+	    </div>
+    	<div class="recommend-box1">图文详情</div>
+    	<div class="image-text-xq-img">{$goods_description.description|htmlspecialchars_decode}</div>
+	    <!--图文详情部分-->
+	</div>
+	<!--加入购物车部分-->
+	<div class="goods-details-bottom">
+		<a href="{:url('index/index')}" class="gd-collect">
+			<span class="gd-collect-img1"></span>
+			<span class="gd-collect-text1">首页</span>
+		</a>
+		<a href="{:url('index/shpcart')}" class="gd-collect">
+			<span class="gd-collect-img1 img2"><i class="cartnum"></i></span>
+			<span class="gd-collect-text1">购物车</span>
+		</a>
+		<div class="gd-collect-sx"></div>
+		<button onclick="addCart()" class="gd-collect-btn1 addcar">加入购物车</button>
+		<button onclick="buy()" class="gd-collect-btn1 btn2">立即购买</button>
+	</div>
+
+</div>
+<script src="__PUBLIC__/js/touchslide.1.1.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/ydui.citys.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/ydui.js"></script>
+<script src="__PUBLIC__/js/goods-details.js"></script>
+</body>
+<script type="text/javascript">
+
+$('.sub_sbox').click(function(){
+	$(this).addClass('checked').siblings().removeClass('checked');
+});
+
+//加入购物车
+function addCart(){
+	var attribute_value_id = "";
+	var len = {$attribute|count};
+	for(var i = 0; i < len; i++){	
+		attribute_value_id += $('.checked').eq(i).attr('attribute_value_id') + ',';
+	}
+	var num = $('#tb_count').val();
+	if(num == 0){
+		layer.msg('请选择购买数量');
+		return false;
+	}
+	var goods_id = {$goods.goods_id};
+	$.post(
+		"{:url('Goods/addCart')}",
+		{
+			attribute_value_id:attribute_value_id,
+			num:num,
+			goods_id:goods_id,
+		},
+		function(msg){
+			//$('.cartnum').html(msg.cartnum);
+			if (msg.success) {
+				layer.msg(msg.text);
+			} else {
+				layer.msg(msg.text);
+			}
+		}
+	);
+}
+
+//立即购买
+function buy(){
+	var attribute = "";
+	var len = {$attribute|count};
+	for(var i = 0; i < len; i++){	
+		attribute += $('.checked').eq(i).attr('attribute_value_id') + ',';
+	}
+	//console.log(attribute);
+	var num = $('#tb_count').val();
+	if(num == 0){
+		layer.msg('请选择购买数量');
+		return false;
+	}
+	var goods = {$goods.goods_id};
+	location.href="{:url('order/orders')}?id="+goods+"&num="+num+"&attribute="+attribute;
+};
+
+//商品数量按钮
+$(".shop-cart-add").click(function() {
+    var multi = 0;
+    var vall = $(this).prev().val();
+    var kuc = {$goods.quantity};
+    if(vall < kuc){
+    	vall++;
+    }
+    $(this).prev().val(vall);
+});
+$(".shop-cart-subtract").click(function() {
+    var multi = 0;
+    var vall = $(this).next().val();
+    vall--;
+    if(vall <= 0) {
+        vall = 0;
+    }
+    $(this).next().val(vall);
+});
+</script>
+</html>

@@ -1,0 +1,345 @@
+{extend name="./shop/admin/view/public/base.html" /}
+{block name="content"}
+<div class="page-header">
+		<h1>
+			{$breadcrumb2}
+			<small>
+				<i class="ace-icon fa fa-angle-double-right"></i>
+				{$crumbs}
+			</small>
+		</h1>
+</div>	
+	<ul class="nav nav-tabs">
+		
+	  <li class="active"><a href="#tab-member" data-toggle="tab">会员资料</a></li>
+	 
+	  <li><a href="#tab-shipping" data-toggle="tab">收货地址</a></li>
+	  <li><a href="#tab-money" data-toggle="tab">资产</a></li>
+	  
+	</ul>
+	<div class="tab-content">		
+		<input class="USER" name="user_id" type="hidden" value="{$Request.param.id}" />		
+		<div class="tab-pane active" id="tab-member">
+			<table class="table table-binfoed">
+				<tr>
+				    <td>ID</td>
+				    <td>{$data.info.user_id}</td>
+				</tr>
+				<tr>
+				    <td>手机号（账号）</td>
+				    <td><input class="USER" name="user_phone" type="number" style="width:400px;" value="{$data.info.user_phone}" /></td>
+				</tr> 
+				<tr>
+					<td>用户名</td>
+					<td>
+						<input class="USER" name="user_name" type="text" style="width: 400px;" value="{$data.info.user_name|default=''}" />
+					</td>
+				</tr>
+				
+				<tr>
+					<td>登录密码</td>
+					<td>
+						<input class="USER" id="pwd" name="password" type="password" style="width:400px;" value="000000" />
+						<input class="USER" name="password1" type="hidden" value="{$data.info.password}" />
+					</td>
+				</tr>
+				<tr>
+					<td>安全密码</td>
+					<td>
+						<input class="USER" id="pwd1" name="pay_password" type="password" style="width:400px;" value="000000" />
+						<input class="USER" name="pay_password1" type="hidden" value="{$data.info.pay_password}" />
+					</td>
+				</tr>	
+				<tr>
+	                <td>头像：</td>
+	                <td class="col-sm-10" id="thumb">
+	                  <a id="thumb-image" href="#" data-toggle="image" class="img-thumbnail">
+	                  	{empty name="$data.info.user_photo"}
+	                  		<img src="__PUBLIC__/image/no_image_100x100.jpg" />
+	                  	{else /}
+	                  		<img style="width: 50px;height: 50px;" src="__UPLOADS__/{$data.info.user_photo}" />
+	                  	{/empty}
+	                  </a>
+	                  <input class="USER" type="hidden" name="image" value="{$data.info.user_photo}" id="input-image" />
+	            	</td>
+          		</tr>
+				<tr>
+					<td>注册时间</td>
+					<td>{$data.info.user_retime|date="Y-m-d H:i:s",###}</td>
+				</tr>
+				<tr>
+					<td>状态</td>
+					<td>	
+						<label class="radio-inline">
+							<input class="USER" type="radio" {if condition="$data.info.status == 1"}checked{/if} value="1" name="status">激活
+						</label>
+						<label class="radio-inline">
+							<input class="USER" type="radio" {if condition="$data.info.status == 2"}checked{/if}  value="2" name="status">冻结
+						</label>
+					</td>
+				</tr>
+			</table>
+			<div class="form-group">
+				<div style="margin-left:20px;">
+					<input name="send" type="submit" value="提交" class="btn btn-primary" id="btn" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="tab-pane" id="tab-shipping">
+			<div class="page-header" >
+				<a id="addbut" href="javascript:;" class="btn btn-primary">＋</a>
+			</div>
+			<div id="add_box" style="display: none;">
+				<table class="table table-binfoed">
+					<input class="ADDRESS" name="uid" type="hidden" value="{$Request.param.id}" />	
+					<tr>
+						<td>收货人姓名</td>
+						<td>
+							<input id="name" class="ADDRESS" name="name" type="text" style="width:30%;" value="" />
+						</td>
+					</tr>
+					<tr>
+						<td>所在地</td>
+						<td>
+							<select class="ADDRESS" id="province" name="province">
+								<option value="change" selected>选择省份</option>
+								{volist name="province" id ='item' key="index"}
+									<option value="{$item.area_id}" >{$item.area_name}</option>
+								{/volist}
+							</select>
+							<select class="ADDRESS" id="city" name="city" style="display: none;">
+								<option value="change" selected>选择市区</option>
+							</select>
+							<select class="ADDRESS" id="country" name="country" style="display: none;">
+								<option value="change" selected>选择县乡</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>详细地址</td>
+						<td>
+							<input id="address" class="ADDRESS" name="address" type="text" style="width:30%;" value="" />
+						</td>
+					</tr>
+					<tr>
+						<td>手机号码</td>
+						<td>
+							<input id="telephone" class="ADDRESS" name="telephone" type="text" style="width:30%;" value="" />
+						</td>
+					</tr>
+					<tr>
+						<td>是否默认</td>
+						<td>	
+							<label class="radio-inline">
+								<input class="ADDRESS" type="radio"  checked="checked" value="1" name="default">否
+							</label>
+							<label class="radio-inline">
+								<input class="ADDRESS" type="radio" value="2" name="default">是
+							</label>
+						</td>
+					</tr>
+				</table>
+				<div class="form-group">
+					<div style="margin-left:20px;">
+						<input name="send" type="submit" value="提交" class="btn btn-primary" id="btn1" />
+					</div>
+				</div>
+			</div>
+			<table class="table table-striped table-bordered table-hove">
+				<thead>
+					<tr>
+						<td>ID</td>
+						<td>收货人姓名</td>          
+						<td>所在地</td>
+						<td>详细地址</td>       
+						<td>手机号码</td>
+						<td>是否为默认</td>
+						<td>操作</td>
+					</tr>
+				</thead>
+				<tbody>
+					<input class="EDIT" name="uid" type="hidden" value="{$Request.param.id}" />	
+					{volist name="data.address" id="vo"}
+						<tr>
+							<td>
+								{$vo.address_id}
+							</td>
+							<td>
+								{$vo.name}
+							</td>          
+							<td>
+								<?php echo get_area_name($vo['province_id']); ?>
+				            	<?php echo get_area_name($vo['city_id']); ?>
+				            	<?php echo get_area_name($vo['country_id']); ?>
+							</td>        
+							<td>
+								{$vo.address}
+							</td>   
+							<td>
+								{$vo.telephone}
+							</td>
+							<td>
+								{if condition="$vo.default == 1"}
+									否
+								{elseif condition="$vo.default == 2" /}
+									是
+								{/if}
+							</td>
+							<td>
+								<a class="btn btn-xs btn-info" id="edit1" href="{:url('MemberBackend/editAddress',array('id'=>$vo['address_id'],'uid'=>$Request.param.id))}">
+									<i class="fa fa-edit bigger-120"></i>
+								</a>
+								<a class="delete btn btn-xs btn-danger" id="remove" href="{:url('MemberBackend/remove',array('id'=>$vo['address_id']))}">
+									<i class="fa fa-trash bigger-120"></i>
+								</a> 
+							</td>
+						</tr>
+					{/volist}  
+				</tbody>
+			</table>  
+			
+  		</div>	
+  		<div class="tab-pane" id="tab-money">
+			<table class="table table-binfoed">
+				<input class="WALLET" name="uid" type="hidden" value="{$Request.param.id}" />	
+				<tr>
+				    <td>钱包ID</td>
+				    <td>{$wallet.id}</td>
+				</tr>
+				<tr>
+				    <td>用户ID</td>
+				    <td>{$wallet.uid}</td>
+				</tr>
+				<tr>
+				    <td>可提现余额</td>
+				    <td><input class="WALLET" name="principal" type="number" style="width:400px;" value="{$wallet.principal}" /></td>
+				</tr> 
+				<tr>
+				    <td>返现余额</td>
+				    <td><input class="WALLET" name="interest" type="number" style="width:400px;" value="{$wallet.interest}" /></td>
+				</tr> 
+			</table>
+			<div class="form-group">
+				<div style="margin-left:20px;">
+					<input name="send" type="submit" value="提交" class="btn btn-primary" id="btn2" />
+				</div>
+			</div>   
+		</div>	
+	</div>
+	
+{/block}
+<!--<script type="text/javascript" src="__PUBLIC__/js/pick-pcc.min.1.0.1.js"></script>-->
+{block name="javascript"}
+<script>
+var back_index="{:url('member_backend/index')}";
+
+//会员基本资料
+$('#btn').click(function(){
+	if($('#pwd').val()==''){
+		alert('密码必填');
+		return false;
+	};
+	if($('#pwd').val().length<6){
+		alert('密码长度必须大于等于6位！！');
+		return false;
+	};
+	if($(".USER[name='pay_password']").val().length != 6){
+		alert('安全密码为6位数！！');
+		return false;
+	};
+	$.post(
+		'{:url("MemberBackend/edit")}',
+		{
+			status:$('.USER:radio:checked').val(),
+			user_phone:$(".USER[name='user_phone']").val(),
+			user_name:$(".USER[name='user_name']").val(),
+			password:$(".USER[name='password']").val(),
+			password1:$(".USER[name='password1']").val(),
+			pay_password:$(".USER[name='pay_password']").val(),
+			pay_password1:$(".USER[name='pay_password1']").val(),
+			image:$(".USER[name='image']").val(),
+			user_id:$(".USER[name='user_id']").val(),
+		},
+		function(d){
+			art_dialog(d,back_index);
+		}
+	);
+});
+
+//会员收货地址
+$('#btn1').click(function(){
+	if($('#name').val()==''){
+		alert('收货人姓名必填');
+		return false;
+	};
+	if($('#address').val()==''){
+		alert('详细地址必填');
+		return false;
+	};
+	if($('#telephone').val()==''){
+		alert('手机号码必填');
+		return false;
+	};
+	$.post(
+		'{:url("MemberBackend/addAddress")}',
+		$('.ADDRESS'),
+		function(d){
+			art_dialog(d,"{:url('member_backend/edit',['id'=>$Request.param.id])}");
+		}
+	);
+});
+
+//会员资产
+$('#btn2').click(function(){
+	$.post(
+		'{:url("MemberBackend/setWallet")}',
+		$('.WALLET'),
+		function(d){
+			art_dialog(d,"{:url('member_backend/edit',['id'=>$Request.param.id])}");
+		}
+	);
+});
+
+//添加
+$('#addbut').click(function(){
+	$('#add_box').toggle('slow');
+});
+	
+//城市选择
+$('#province').bind("change",function(){
+	$('#province option[value="change"]').remove();
+	var province_id = $('#province option:selected').val();
+	//var city = JSON.stringify({$json_city});
+	var city = {$json_city};
+	var len = city.length;
+	$("#city").empty();
+	for(var i = 0;i<len;i++){
+		if(city[i].area_parent_id == province_id){
+			var Value = city[i].area_id;
+			var Text = city[i].area_name;
+			$("#city").append("<option value='"+Value+"'>"+Text+"</option>");
+		}
+	}
+	$('#city').show();
+});
+
+$('#city').bind("change",function(){
+	$('#city option[value="change"]').remove();
+	var city_id = $('#city option:selected').val();
+	//var city = JSON.stringify({$json_city});
+	var country = {$json_country};
+	var len = country.length;
+	$("#country").empty();
+	for(var i = 0;i<len;i++){
+		if(country[i].area_parent_id == city_id){
+			var Value = country[i].area_id;
+			var Text = country[i].area_name; 
+			$("#country").append("<option value='"+Value+"'>"+Text+"</option>");
+		}
+	}
+	$('#country').show();
+});
+
+</script>							
+{/block}
